@@ -1,19 +1,19 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    "group:all"
-  ],
-  "packageRules": [
-    {
-      "ignoreUnstable": false,
-      "matchPaths": [
-        "*"
-      ]
-    }
-  ],
-  "separateMajorMinor": false,
-  "separateMinorPatch": false,
-  "minimumReleaseAge": "1 days",
-  "dependencyDashboard": false
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "dependencyDashboard": false,
+    "extends": [
+        "config:recommended",
+        "group:all"
+    ],
+    "minimumReleaseAge": "1 days",
+    "packageRules": [
+        {
+            "ignoreUnstable": false,
+            "matchFileNames": [
+                "*"
+            ]
+        }
+    ],
+    "separateMajorMinor": false,
+    "separateMinorPatch": false
 }
